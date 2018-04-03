@@ -47,15 +47,11 @@ These coins are showing very high increases in value. The chance that they will 
 # FAQ
 Q: Will this work with BTC?
 
-A: Yes. You will need to update the below two properties in your PAIRS.properties.
+A: Yes. You will need to update the below properties in your PAIRS.properties.
 
-	market = BTC
-	ALL_max_trading_pairs = _your value here_
-	ALL_min_buy_volume = _your value here_
-
-Q: Are you working on anything new?
-
-A: Yes! I have been collaborating with a few other interested individuals who shared a very insightful article with me. In this setup, the goal will be to go after only well-behaving pairs that allow profits of 5-10% for each pair. DCA levels will be deep. The settings.analyzer file will be much smaller. The target profit time for pairs will be days and not hours. The number of concurrently trading pairs is more than double what the "Quick Sales" strategy runs. I started testing this on March 23rd and probably won't release settings for this until April, pending refinement and positive results. To learn more, check out [the article](https://medium.com/@wisepapertiger/profit-trailer-bitcoin-cryptobot-that-makes-lots-of-money-bitcoin-currency-trading-c4f618e048fc).
+    market = BTC
+    ALL_max_trading_pairs = [your value here, see next question]
+    ALL_min_buy_volume = [your value here, recommend 400-700]
 
 Q: What should I set ALL_max_trading_pairs to?
 
@@ -68,3 +64,10 @@ A: Bottom line up front: to make sure you're compounding. Longer explanation: if
 Q: Why are so many pairs in Sell Only Mode?
 
 A: This group of settings was designed to get in and out of pairs that show favorable behavior. It avoids anything that can be risky like downtrends and pumps. Unfortunately, a lot of pairs just don't make the cut. If you want to trade pairs that are downtrending, remove the downtrending setting. Another option is to change the ALL_buy_strategy to something like LOWBB or EMAGAIN. I tried this and wasn't pleased with the results because the whole point of these settings is to get IN AND OUT as quickly as possible. If you want look at holding a pair for days at a time, then this setup might not work for you. Or, you'll need to adjust your DCA levels for a much greater level of depth.
+
+
+Q: What will the sales look like?
+
+A: Like this:
+
+![Sales Log Example](https://imgur.com/IvA9reX.jpg)
