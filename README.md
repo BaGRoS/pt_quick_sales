@@ -70,4 +70,4 @@ Q: What will the sales look like?
 
 A: Like this:
 
-![Sales Log Example](https://imgur.com/IvA9reX.jpg)
+![Sales Log Example](https://imgur.com/MEfz177.jpg)
